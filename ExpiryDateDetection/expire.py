@@ -8,7 +8,8 @@ os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 reader = easyocr.Reader(['en'])  
 
 def extract_text_from_image(image_path):
-    image = Image.open('sample.jpeg')
+    image = Image.open(r'C:\Users\malav\OneDrive\Desktop\Programming\Python\Smart-Vision-Technology-Quality-Control-Flipkart-GRID-6.0-\ExpiryDateDetection\sample.jpeg')
+
     results = reader.readtext(image_path)
     
     text = ' '.join([result[1] for result in results])
