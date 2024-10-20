@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Load the image
-image = cv2.imread('image.jpg')
+image = cv2.imread('Object_Count/image.jpg')
 
 # Check if the image loaded successfully
 if image is None:
